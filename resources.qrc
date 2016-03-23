@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/Cu_Video_Tracker" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
