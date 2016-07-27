@@ -1075,3 +1075,4 @@ class TableManager(QDialog, Ui_Dialog):
     QgsMapLayerRegistry.instance().addMapLayer( self.layer )
     QgsProject.instance().dirty( True )
     self.close()
+
