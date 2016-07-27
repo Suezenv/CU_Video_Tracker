@@ -368,8 +368,8 @@ class Cu_Video_TrackerDialog(QtGui.QDialog):
         East,North,alt = self.transform_wgs84_to_utm(self.lat_new,self.lon_new)
         self.ui.E.setText ('Easting : ' + str(East))
         self.ui.N.setText ('Northing : ' + str(North))
-        self.ui.lat.setText ('Latitude : ' + str(self.lat_new))
-        self.ui.lon.setText('Longitude : ' + str(self.lon_new))
+        self.ui.lat.setText ('Latitude : ' + str(self.lon_new))
+        self.ui.lon.setText('Longitude : ' + str(self.lat_new))
 
     def PlayPauseButton(self):
         if self.PlayPuase == 1:
@@ -1075,4 +1075,3 @@ class TableManager(QDialog, Ui_Dialog):
     QgsMapLayerRegistry.instance().addMapLayer( self.layer )
     QgsProject.instance().dirty( True )
     self.close()
-
